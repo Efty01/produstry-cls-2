@@ -1,0 +1,53 @@
+@media (min-width: 320px) and (max-width: 991px) {
+  header .addressText {
+    text-align: center;
+    padding: 10px 0;
+  }
+  header .welcomeText {
+    clip-path: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  #banner .banner_slide {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #myCustomNavbar ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in;
+  }
+
+  #myCustomNavbar ul.activeNavMenu {
+    opacity: 1;
+    transition: 0.3s ease-in;
+    visibility: visible;
+  }
+
+  #myCustomNavbar .btn_toggler {
+    position: absolute;
+    right: 0;
+  }
+  nav {
+    min-height: 100px;
+  }
+  nav .container {
+    position: relative;
+  }
+  nav .navbarLogo {
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav .navbarLogo.activeLogo {
+    left: 0%;
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+  }
+}
